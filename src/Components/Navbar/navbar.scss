@@ -1,0 +1,21 @@
+.navbarDiv {
+    height: 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+    padding: 0 75px;
+}
+
+.logo {
+    width: 150px;
+}
+.profilePic {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
