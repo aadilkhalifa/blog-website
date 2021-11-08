@@ -39,9 +39,18 @@
         margin-bottom: 10px;
         font-size: .7em;
     }
-
-    h3 {
+    
+    .readLink {
+        text-align: end;
+        font-size: .8em;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+    h3.cardTitle {
         margin: 0;
+        text-decoration: none;
+        color: black;
     }
     p {
         display: -webkit-box;
@@ -52,8 +61,12 @@
         font-size: small;
         color: rgb(136, 136, 136);
     }
-    h4 {
-        text-align: end;
-        font-size: .8em;
+    .readDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    a {
+        text-decoration: none;
     }
 }

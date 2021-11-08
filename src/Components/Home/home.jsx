@@ -2,19 +2,21 @@ import React from 'react'
 import './home.scss'
 import Navbar from '../Navbar/navbar'
 import Card from './card'
+import Footer from '../Footer/Footer'
+import { Link } from 'react-router-dom'
 
-function home() {
+function home({database}) {
     return (
         <div>
             <Navbar/>
             <div className="featuredBlog">
                 <div className="featuredTitleDiv">
                     <p className="featuredTitle">
-                        How to Invest your Money in Latest Technologies
+                        {database[0].title}
                     </p>
-                    <p className="featuredSubTitle">
+                    <Link to="./blog/0" className="featuredSubTitle">
                         Read Article
-                    </p>
+                    </Link>
                 </div>
             </div>
             <div className="content">
@@ -34,19 +36,19 @@ function home() {
                     }
                     <div>
                         <div className="cardsDiv">
-                            <Card/>
-                            <Card/>
-                            <Card/>
-                            <Card/>
-                            <Card/>
+                            <Card data = {database[1]} id = {1} />
+                            <Card data = {database[2]} id = {2} />
+                            <Card data = {database[3]} id = {3} />
+                            <Card data = {database[4]} id = {4} />
+                            <Card data = {database[5]} id = {5} />
                         </div>
                         <h5 className="loadMore">
-                            Load more articles..
+                            No more articles :)
                         </h5>
                     </div>
                 </div>
             </div>
-            <div className="bottom">
+            {/* <div className="bottom">
                 <div className="bottomInside">
                     <span>
                         About
@@ -55,7 +57,8 @@ function home() {
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloribus possimus perferendis tenetur cumque quis ipsum quia aperiam laboriosam laudantium veniam, nulla iste hic quas corrupti consectetur, reiciendis excepturi cupiditate.
                     </p>
                 </div>
-            </div>
+            </div> */}
+            <Footer/>
         </div>
     )
 }

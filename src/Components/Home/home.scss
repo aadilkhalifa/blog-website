@@ -28,6 +28,11 @@
 }
 .featuredSubTitle {
     font-size: small;
+    text-decoration: none;
+    color: white;
+}
+.featuredSubTitle:hover{
+    font-weight: bold;
 }
 .content {
     // height: 100vh;

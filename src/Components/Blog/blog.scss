@@ -1,0 +1,82 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:50px;
+}
+.blogLeftBar{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    // background-color: chocolate;
+    .imgDiv{
+        width: 100%;
+        margin: 0;
+
+        img {
+            width: 50%;
+            // object-fit: cover;
+            border-radius: 100%;
+            margin: 0;
+            align-self: center;
+        }
+    }
+
+    h4 {
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        margin: 0;
+        font-size: .8em;
+        font-weight: bold;
+        color: rgb(110, 110, 110);
+
+    }
+    button {
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid rgb(110, 110, 110);
+        padding: 5px 10px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        width: fit-content;
+        margin-top: 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(230, 230, 230);
+    }
+
+    .socialIcons{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+    }
+}
+.tags {
+    margin-top: 0;
+    color: rgb(73, 73, 73);
+}
+.blogContent{
+    width: 50%;
+    // height: 100vh;
+    // background-color: rgb(121, 121, 121);
+    margin: 0 25px;
+}
+.blogDetails {
+    font-weight: bold;
+    color: rgb(110, 110, 110);
+    font-size: small;
+}
+img {
+    width: 100%;
+}
+.blogBody {
+    width: 100%;
+    // font-size: larger;
+}
