@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Navbar2() {
 
-    const [Active, setActive] = useState(1);
+    const [Active, setActive] = useState(1); 
 
     return (
         <div className="navbar2Div">
@@ -18,7 +18,7 @@ function Navbar2() {
             </div>
             <div className="navbarCenterDiv">
                 <Link to="#" onClick={()=>{setActive(1)}} className={`${Active===1 ? "active" : ""}`} >
-                    Topics
+                    Articles
                 </Link>
                 <Link to="#" onClick={()=>{setActive(2)}} className={`${Active===2 ? "active" : ""}`} >
                     Events

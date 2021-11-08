@@ -7,7 +7,7 @@ function Footer() {
     return (
         <div className="footerDiv">
             <div className="optionsDiv">
-                <a>Topics</a>
+                <a>Articles</a>
                 <a>Events</a>
                 <a>About</a>
                 <a>Contact</a>

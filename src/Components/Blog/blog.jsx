@@ -26,15 +26,20 @@ function Blog({database}) {
             <Navbar2></Navbar2>
             <div className="layout">
                 <div className="blogLeftBar">
-                    <div className="imgDiv">
-                        <img src={ProfilePic} alt="" />
+                    <div className="imageNameDiv">
+                        <div className="imgDiv">
+                            <img src={ProfilePic} alt="" />
+                        </div>
+                        <div className="nameDiv">
+                            <h4>
+                                Emily Ryese
+                            </h4>
+                            <p>
+                                Chief Marketing Officer at Zoom
+                            </p>
+                        </div>
                     </div>
-                    <h4>
-                        Emily Ryese
-                    </h4>
-                    <p>
-                        Chief Marketing Officer at Zoom
-                    </p>
+
                     <button>Follow</button>
 
                     <div className="socialIcons">

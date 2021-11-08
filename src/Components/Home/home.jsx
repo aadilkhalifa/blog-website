@@ -11,9 +11,9 @@ function home({database}) {
             <Navbar/>
             <div className="featuredBlog">
                 <div className="featuredTitleDiv">
-                    <p className="featuredTitle">
+                    <Link to="./blog/0" className="featuredTitle">
                         {database[0].title}
-                    </p>
+                    </Link>
                     <Link to="./blog/0" className="featuredSubTitle">
                         Read Article
                     </Link>
