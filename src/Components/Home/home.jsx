@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './home.scss'
 import Navbar from '../Navbar/navbar'
 import Navbar2 from '../Navbar2/Navbar2'
@@ -7,7 +7,12 @@ import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
-function home({database}) {
+function Home({database}) {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <div>
             {/* <Navbar/> */}
@@ -71,4 +76,4 @@ function home({database}) {
     )
 }
 
-export default home
+export default Home
