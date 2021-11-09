@@ -150,12 +150,25 @@ img {
     display: flex;
     flex-direction: column;
 
+    @include mobile {
+        margin: 0;
+        align-items: center;
+    }
+
+
+
     h3{
         margin-left: 10px;
     }
 
     span{
         display: flex;
+        flex-wrap: wrap;
+
+        @include mobile {
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 

@@ -98,7 +98,7 @@ function Blog({database}) {
             </div>
             <div className="similarDiv">
                 <h3>Similar posts</h3>
-                <span>
+                <span className="similarCardsDiv">
                     <Card data={database[i]} id={i} />
                     <Card data={database[j]} id={j} />
                 </span>
