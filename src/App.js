@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.scss';
 import Home from './Components/Home/home'
 import Blog from './Components/Blog/blog'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import Events from './Components/Events/Events';
+import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
 
 function App() {
+  
   return (
     <Router>
       <div className="App">
@@ -12,8 +15,20 @@ function App() {
         <Route path="/blog/:id">
           <Blog database={database}  />
         </Route>
-        <Route path="/">
+        <Route path="/home">
           <Home database={database} />
+        </Route>
+        <Route path="/events">
+          <Events />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/">
+          <Redirect to="/home" />
         </Route>
       </Switch>
       </div>

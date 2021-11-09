@@ -1,7 +1,7 @@
-import './Navbar2.scss'
+import './Navbar2.scss' 
 
 import React, { useState } from 'react';
-import Logo from '../../Images/logoDark.svg'
+import Logo from '../../Images/logo.svg'
 import ProfilePic from '../../Images/profile_pic2.jpg'
 import { Link } from "react-router-dom";
 
@@ -17,21 +17,21 @@ function Navbar2() {
                 </Link>
             </div>
             <div className="navbarCenterDiv">
-                <Link to="#" onClick={()=>{setActive(1)}} className={`${Active===1 ? "active" : ""}`} >
+                <Link to="../home" onClick={()=>{setActive(1)}} className={`${Active===1 ? "active" : ""}`} >
                     Articles
                 </Link>
-                <Link to="#" onClick={()=>{setActive(2)}} className={`${Active===2 ? "active" : ""}`} >
+                <Link to="../events" onClick={()=>{setActive(2)}} className={`${Active===2 ? "active" : ""}`} >
                     Events
                 </Link>
-                <Link to="#" onClick={()=>{setActive(3)}} className={`${Active===3 ? "active" : ""}`} >
+                <Link to="../about" onClick={()=>{setActive(3)}} className={`${Active===3 ? "active" : ""}`} >
                     About
                 </Link>
-                <Link to="#" onClick={()=>{setActive(4)}} className={`${Active===4 ? "active" : ""}`} >
+                <Link to="../contact" onClick={()=>{setActive(4)}} className={`${Active===4 ? "active" : ""}`} >
                     Contact
                 </Link>
             </div>
             <div className="navbarRightDiv">
-                <input type="text" placeholder="Search.."/>
+                {/* <input type="text" placeholder="Search.."/> */}
                 <img className="profilePic" src={ProfilePic} alt="" />
             </div>
         </div>

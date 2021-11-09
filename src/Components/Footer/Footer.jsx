@@ -2,15 +2,16 @@ import './Footer.scss'
 import { TiSocialLinkedinCircular, TiSocialTwitterCircular, TiSocialFacebookCircular } from 'react-icons/ti'
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
         <div className="footerDiv">
             <div className="optionsDiv">
-                <a>Articles</a>
-                <a>Events</a>
-                <a>About</a>
-                <a>Contact</a>
+                <Link to="../home">Articles</Link>
+                <Link to="../events">Events</Link>
+                <Link to="../about">About</Link>
+                <Link to="../contact">Contact</Link>
             </div>
             <div className="socialIcons">
                 <TiSocialLinkedinCircular size="2em" />

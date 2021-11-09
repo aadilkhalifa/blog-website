@@ -2,7 +2,7 @@
 
 
 .featuredBlog {
-    height: 90vh;
+    height: 85vh;
     width: 100%;
     background-color: red;
 
@@ -43,9 +43,12 @@
     font-size: small;
     text-decoration: none;
     color: white;
+    margin-right: 5px;
 }
 .featuredSubTitle:hover{
-    font-weight: bold;
+    // font-weight: bold;
+    // border-bottom: white 1px solid;
+    text-decoration: underline;
 }
 .content {
     // height: 100vh;
@@ -122,4 +125,13 @@
             // border-bottom: 2px solid black;
         }
     }
+}
+
+hr{
+    border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color: black;
+  height: 1px;
 }

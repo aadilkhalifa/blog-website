@@ -33,6 +33,8 @@
     background-color: white;
     height: 40%;
     padding: 20px;
+    display: flex;
+    flex-direction: column  ;
 
     h5 {
         margin: 0;
@@ -46,20 +48,33 @@
         font-weight: bold;
         text-decoration: none;
         color: black;
+        margin-right: 5px;
     }
+
     h3.cardTitle {
         margin: 0;
         text-decoration: none;
         color: black;
-    }
-    p {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: small;
-        color: rgb(136, 136, 136);
+    }
+    .descDiv{
+        // flex-shrink: 1;
+        height: min-content;
+        // background-color: blue;
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: small;
+            color: rgb(136, 136, 136);
+            margin: 5px 0;
+        }
     }
     .readDiv {
         display: flex;

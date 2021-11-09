@@ -1,22 +1,28 @@
 import React from 'react'
 import './home.scss'
 import Navbar from '../Navbar/navbar'
+import Navbar2 from '../Navbar2/Navbar2'
 import Card from './card'
 import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
+import { HiArrowNarrowRight } from 'react-icons/hi'
 
 function home({database}) {
     return (
         <div>
-            <Navbar/>
+            {/* <Navbar/> */}
+            <Navbar2></Navbar2>
             <div className="featuredBlog">
                 <div className="featuredTitleDiv">
                     <Link to="./blog/0" className="featuredTitle">
                         {database[0].title}
                     </Link>
-                    <Link to="./blog/0" className="featuredSubTitle">
-                        Read Article
-                    </Link>
+                    <div style={{ display:'flex', flexDirection: 'row', alignItems: 'center' }}>
+                        <Link to="./blog/0" className="featuredSubTitle">
+                            Read Article 
+                        </Link>
+                        <HiArrowNarrowRight></HiArrowNarrowRight>
+                    </div>
                 </div>
             </div>
             <div className="content">
@@ -27,11 +33,13 @@ function home({database}) {
                         <h2>
                             Top News
                         </h2>
-                        <h3>Archive </h3>
+                        {/* <h3>Archive </h3>
                         <p>2021</p>
                         <p>2020</p>
                         <p>2019</p>
-                        <p>2018</p>
+                        <p>2018</p> */}
+                        {/* <p>Latest news curated just for you.</p> */}
+                        {/* <hr /> */}
                     </div>
                     }
                     <div>
