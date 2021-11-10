@@ -29,6 +29,7 @@ function App() {
         </Route>
         <Route path="/">
           <Redirect to="/home" />
+          {/* <Home database={database} /> */}
         </Route>
       </Switch>
       </div>

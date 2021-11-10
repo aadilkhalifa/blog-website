@@ -15,7 +15,7 @@ function Card( {data, id} ) {
                 <h5>
                     {data.topic}
                 </h5>
-                <Link to={`${"../blog/"+id}`} >
+                <Link to={`${"/blog/"+id}`} >
                     <h3 className="cardTitle">
                         {/* How to improve your business */}
                         {data.title}
@@ -28,7 +28,7 @@ function Card( {data, id} ) {
                     </p>
                 </div>
                 <div className="readDiv">
-                    <Link to={`${"../blog/"+id}`} className="readLink">
+                    <Link to={`${"/blog/"+id}`} className="readLink">
                         Read 
                     </Link>
                     <HiArrowNarrowRight></HiArrowNarrowRight>

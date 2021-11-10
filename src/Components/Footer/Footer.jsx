@@ -8,12 +8,14 @@ import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <div className="footerDiv">
-            <img src={Logo} alt="" />
+            <Link to="/home">
+                <img src={Logo} alt="" />
+            </Link>
             <div className="optionsDiv">
-                <Link to="../home">Articles</Link>
-                <Link to="../events">Events</Link>
-                <Link to="../about">About</Link>
-                <Link to="../contact">Contact</Link>
+                <Link to="/home">Articles</Link>
+                <Link to="/events">Events</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
             </div>
             <div className="socialIcons">
                 <TiSocialLinkedinCircular size="2em" />

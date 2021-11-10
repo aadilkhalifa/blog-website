@@ -19,11 +19,11 @@ function Home({database}) {
             <Navbar2></Navbar2>
             <div className="featuredBlog">
                 <div className="featuredTitleDiv">
-                    <Link to="./blog/0" className="featuredTitle">
+                    <Link to="/blog/0" className="featuredTitle">
                         {database[0].title}
                     </Link>
                     <div style={{ display:'flex', flexDirection: 'row', alignItems: 'center' }}>
-                        <Link to="./blog/0" className="featuredSubTitle">
+                        <Link to="/blog/0" className="featuredSubTitle">
                             Read Article 
                         </Link>
                         <HiArrowNarrowRight></HiArrowNarrowRight>
